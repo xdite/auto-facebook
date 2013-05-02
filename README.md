@@ -10,6 +10,12 @@ Add these lines to your application's Gemfile:
     gem "omniauth-facebook"
     gem "auto-facebook"
 
+## Rails 4.0+
+
+    gem "omniauth"
+    gem "omniauth-facebook"
+    gem "auto-facebook", "0.1.rails4"
+
 And then execute:
 
     $ bundle
