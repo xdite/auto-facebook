@@ -1,4 +1,4 @@
 module AutoFacebook
 
-    VERSION = "0.01"
+    VERSION = "0.41"
 end

@@ -1,6 +1,6 @@
 require 'rails/generators'
 require 'rails/generators/migration'
-require 'rails/generators/active_record/migration'
+require 'rails/generators/active_record'
 
 module AutoFacebook
 
@@ -16,6 +16,10 @@ module AutoFacebook
 
       def self.next_migration_number(path)
         @migration_number = Time.now.utc.strftime("%Y%m%d%H%M%S").to_i.to_s
+      end
+
+      def self.next_migration_number(dirname)
+        ActiveRecord::Generators::Base.next_migration_number(dirname)
       end
     end
   end
