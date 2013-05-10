@@ -36,7 +36,7 @@ class User
       user.token = credentials['token']
       user.name = data["nickname"] ? data ["nickname"] : data["name"]
 
-      user.name.gsub!(/[^\w]/, "_")
+      #user.name.gsub!(/[^\w]/, "_")
       if User.where(:name => user.name).count > 0 || user.name.blank?
         user.name = "u#{Time.now.to_i}"
       end
