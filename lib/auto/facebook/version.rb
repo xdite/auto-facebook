@@ -1,4 +1,4 @@
 module AutoFacebook
 
-    VERSION = "0.1.rails4"
+    VERSION = "0.4"
 end
